@@ -37,7 +37,7 @@ public class InvoiceServiceTest {
                         new Ride(0.1,1)
                         };
         InvoiceSummary summary = invoiceGenerator.calculateFare(rides);
-        InvoiceSummary expectedInvoiceSummary = new InvoiceSummary(2,30.0);
-        Assert.assertEquals(String.valueOf(expectedInvoiceSummary),summary);
+        InvoiceSummary expectedInvoiceSummary = new InvoiceSummary(2,10.0);
+        Assert.assertEquals(expectedInvoiceSummary,summary);
     }
 }

@@ -4,6 +4,8 @@ public class Ride {
     public double distance;
     public int time;
     public Ride(double distance, int time) {
+        this.distance = distance;
+        this.time = time;
     }
 
     public int getTime() {
@@ -20,5 +22,13 @@ public class Ride {
 
     public void setDistance(double distance) {
         this.distance = distance;
+    }
+
+    @Override
+    public String toString() {
+        return "Ride{" +
+                "distance=" + distance +
+                ", time=" + time +
+                '}';
     }
 }
